@@ -60,6 +60,7 @@
         - Finally we specify the command that should run when container runs
 - To build the container we run:
 > docker build -t simple-node .
+
 ==NOTE:== If on Mac, run the Docker desktop app first, otherwise it won't be able to connect to docker daemon
 - To run the image we can use:
 > docker run --rm -p 3000:3000 simple-node
