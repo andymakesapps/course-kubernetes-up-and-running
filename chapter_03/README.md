@@ -62,7 +62,9 @@
     - Kubernetes tools are backward- and forward-compatible
 - Next, run a simple diagnostic
     > kubectl get componentstatuses
-    
+
+| Syntax | Description |
+| ----------- | ----------- |
 | Component | Description |
 | controller-manager | runs controllers that regulate behaviour in the cluster, like checking all replicas of a service are healthy |
 | scheduler | responsible for placing different Pods onto different nodes in the cluster |
