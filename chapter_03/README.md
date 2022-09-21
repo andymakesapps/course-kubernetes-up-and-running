@@ -63,9 +63,8 @@
 - Next, run a simple diagnostic
     > kubectl get componentstatuses
 
-| Syntax | Description |
-| ----------- | ----------- |
 | Component | Description |
+| ----------- | ----------- |
 | controller-manager | runs controllers that regulate behaviour in the cluster, like checking all replicas of a service are healthy |
 | scheduler | responsible for placing different Pods onto different nodes in the cluster |
 | etcd | storage for the cluster, where all API objects are stored |
@@ -75,7 +74,7 @@
         1. *control-plane* that contain containers like API server, scheduler, etc. -> used to manage the cluster
         2. *worker* nodes where the containers will run
 - To get more info on a node:
-    > kubectl describe nodes <Node Name>
+    > kubectl describe nodes `Node Name`
 
 
 ## Cluster Components
