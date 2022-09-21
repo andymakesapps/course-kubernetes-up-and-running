@@ -83,18 +83,18 @@
 
 ### Kubernetes Proxy
 
-    - routes network traffic to load-balanced services in the cluster
-    - must be present on every node in the cluster -> utilizes an API called DaemonSet for this
-    - we can see the proxies by running:
-        > kubectl get daemonSets --namespace=kube-system kube-proxy
-    - ideally the kube-proxy container should run on all nodes in a cluster
+- routes network traffic to load-balanced services in the cluster
+- must be present on every node in the cluster -> utilizes an API called DaemonSet for this
+- we can see the proxies by running:
+    > kubectl get daemonSets --namespace=kube-system kube-proxy
+- ideally the kube-proxy container should run on all nodes in a cluster
 
 ### Kubernetes DNS
 
-    - naming and discovery for services defined in the cluster
-    - runs as a replicated service on the cluster 
-    - sometimes called *coredns*
-        > kubectl get deployments --namespace=kube-system core-dns
-        > kubectl get service --namespace=kube-system core-dns
-            - the above shows the Cluster IP which has been populated in /etc/resolv.conf file in container
+- naming and discovery for services defined in the cluster
+- runs as a replicated service on the cluster 
+- sometimes called *coredns*
+    > kubectl get deployments --namespace=kube-system core-dns
+    > kubectl get service --namespace=kube-system core-dns
+        - the above shows the Cluster IP which has been populated in /etc/resolv.conf file in container
         
