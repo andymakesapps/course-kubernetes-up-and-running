@@ -113,9 +113,9 @@ Case II
 
 ## Clean up
 - Once we are done building we can delete with:
-> docker rmi <tag-name>
+> docker rmi `tag-name`
 or
-> docker rmi <image-id>
+> docker rmi `image-id`
 - Creating an image will make it live in the sys forever unless deleted
 > docker images
 - The above can be used to list current images OR

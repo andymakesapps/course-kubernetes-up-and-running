@@ -96,5 +96,6 @@
 - sometimes called *coredns*
     > kubectl get deployments --namespace=kube-system core-dns
     > kubectl get service --namespace=kube-system core-dns
-        - the above shows the Cluster IP which has been populated in /etc/resolv.conf file in container
+        
+    - the above shows the Cluster IP which has been populated in /etc/resolv.conf file in container
         
