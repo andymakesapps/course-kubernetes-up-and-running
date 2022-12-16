@@ -35,10 +35,29 @@
 ### Decoupling
 
 - in a decoupling architecture each component is separated from other components
-- this makes it easy to slave the programs that make up the service as it reduces the surface area of changes
+- this makes it easy to scale the programs that make up the service as it reduces the surface area of changes
 
 ### Easy Scaling for Applications
 
-- Kubernetes includes automating slacing of resources 
+- Due to its immutable nature, Kubernetes can easily be scaled simply by defining the number of replicas in the config 
 
-TO BE CONTINUED...
+### Microservices
+
+- Fun Fact: Research shows the ideal team size is the "two-pizza team", in other words six to eight people
+- Kubernetes offers abstractions and APIs to achieve good team splits:
+    - Pods = group of containers, can also group different images into containers
+    - Services = Load Balancing, used to discover and isolate microservices from one another
+    - Namespaces = provide isolation and Access Control for each microservice so that they can control the degree other services interact with it
+    - Ingress = front end service 
+
+### Separation
+
+- A teamn can manage a cluster for hundreds maybe thousands of applications/teams
+- KaaS (Kubernetes-as-a-Service) makes this easier as it is available on all public clouds
+    - However, on clouds alpha features are usually disabled as the operator makes some decisions
+
+## Abstractions
+
+- Too often cloud APIs focus on mirroring infrastrucutre IT experts want (Virtual Machines) instead of what developers consume (applications)
+- With Kubernetes moving applications is a matter of setting the right config
+
