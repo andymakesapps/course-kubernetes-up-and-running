@@ -55,8 +55,7 @@
 ## Kubernetes Client
 
 - *kubectl* is a command-line tool for interacting with Kubernetes API
-- can be used to manage most Kubernetes objects - Pods, ReplicaSets, Serices
-! NOTE: For this example I will use GKE
+- can be used to manage most Kubernetes objects - Pods, ReplicaSets, Serices [^1]
 - To check the version of the cluster:
     > kubectl version
     - Kubernetes tools are backward- and forward-compatible
@@ -98,4 +97,8 @@
     > kubectl get service --namespace=kube-system core-dns
         
     - the above shows the Cluster IP which has been populated in /etc/resolv.conf file in container
+
+---
+[^1] NOTE: For this example I will use GKE
+
         
