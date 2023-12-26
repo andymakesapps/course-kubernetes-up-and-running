@@ -61,7 +61,7 @@
 - to create it:
 > kubectl apply -f obj.yaml
     - we can run apply again if we made updates
-    - *edit-last-applies*, *set-last-applied*, and *view-last-applied* can be also used as flags to see the history
+    - *edit-last-applied*, *set-last-applied*, and *view-last-applied* can be also used as flags to see the history
 - apply only modifies objects that are different from current cluster objects
 
 > --dry-run
