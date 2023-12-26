@@ -1,8 +1,8 @@
 # Labels and Annotations
 
-- both are fundamental concepts esential when sclaing apps in both size and complexity
+- both are fundamental concepts essential when scaling apps in both size and complexity
 - labels are key/value pairs that can be attached to Kubernetes objects, ideal for grouping or identifying info
-- annotations provide a storage system that resembles lables, also key/value pairs but used for querying, filtering, and differentiating Pods from each other
+- annotations provide a storage system that resembles labels, also key/value pairs but used for querying, filtering, and differentiating Pods from each other
 
 ## Labels
 
