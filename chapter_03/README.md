@@ -40,7 +40,8 @@
 
 - Ran locally
 - Uses a hypervisor on machine, on Linux/Mac it's VirtualBox, on Windows Hyper-V
-! TODO: What is a hypervisor?
+hypervisor
+: sit between the hardware and the operating system, allowing multiple operating systems to run on a single physical machine
 - To deploy:
     > minikube start
     > minikube stop
@@ -55,7 +56,7 @@
 ## Kubernetes Client
 
 - *kubectl* is a command-line tool for interacting with Kubernetes API
-- can be used to manage most Kubernetes objects - Pods, ReplicaSets, Serices [^1]
+- can be used to manage most Kubernetes objects - Pods, ReplicaSets, Serices ^*^
 - To check the version of the cluster:
     > kubectl version
     - Kubernetes tools are backward- and forward-compatible
@@ -99,6 +100,6 @@
     - the above shows the Cluster IP which has been populated in /etc/resolv.conf file in container
 
 ---
-[^1] NOTE: For this example I will use GKE
+^*^ NOTE: For this example I will use GKE
 
         
