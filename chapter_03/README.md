@@ -40,8 +40,10 @@
 
 - Ran locally
 - Uses a hypervisor on machine, on Linux/Mac it's VirtualBox, on Windows Hyper-V
+
 hypervisor
 : sit between the hardware and the operating system, allowing multiple operating systems to run on a single physical machine
+
 - To deploy:
     > minikube start
     > minikube stop
